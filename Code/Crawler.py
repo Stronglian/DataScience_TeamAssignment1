@@ -117,7 +117,7 @@ def ArticleCrawler(TAG, base_url, driver, scollTime = 10):
                 content = tempList[0]
                 for part in tempList[1:]:
                     #content += part
-                    content += "\\n" + part
+                    content += part
         except: #處理未避掉的錯誤
             print(link)
             content = "None"
